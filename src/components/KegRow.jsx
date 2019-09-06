@@ -3,10 +3,13 @@ import Keg from './Keg';
 
 function KegRow(){
   return(
-    <Keg 
+    <div>
+      <Keg 
       name="Pyramid Hefeweizen"
       brand="Pyramid"
       price="$5" />
+    </div>
+    
   );
 }
 
