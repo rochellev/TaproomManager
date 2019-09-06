@@ -1,11 +1,11 @@
 import React from 'react';
 
-function FilterableKegTable(){
-    return(
+function FilterableKegTable() {
+    return (
         <div>
             im a filterable keg table
-        </div>
-    )
+    </div>
+    );
 }
 
 export default FilterableKegTable;
