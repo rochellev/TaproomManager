@@ -1,5 +1,6 @@
-# Taproom Manager, A React App
+# Taproom Manager
 ### Rochelle Roberts
+
 
 ## Description
 
@@ -27,4 +28,9 @@ Runs the app in the development mode.<br>
 ![component graph](src/assets/img/TaproomManager.jpg)
 
 
-
+## Technologies Used
+* React
+* CSS
+* Webpack
+* Babel
+* ESLint
