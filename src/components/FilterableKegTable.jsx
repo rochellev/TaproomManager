@@ -1,11 +1,14 @@
 import React from 'react';
 import UserInputBox from './UserInputBox';
+import KegTable from './KegTable';
 
 
 function FilterableKegTable() {
   return (
     <div>
-      <UserInputBox />
+      
+      <br></br>
+      <KegTable />
     </div>
   );
 }

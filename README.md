@@ -30,6 +30,7 @@ Runs the app in the development mode.<br>
 
 ## Technologies Used
 * React
+* JSX
 * CSS
 * Webpack
 * Babel
