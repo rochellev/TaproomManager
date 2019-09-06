@@ -6,6 +6,9 @@ function App(){
     return (
         <div>
             <Header/>
+            <Switch>
+                <Route exact path='/' component={} />
+            </Switch>
         </div>
     )
 }
