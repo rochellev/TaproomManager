@@ -22,4 +22,9 @@ $ npm install
 Runs the app in the development mode.<br>
 
 
+## Component Design
+
+![component graph](src/assets/img/TaproomManager_routes.jpg)
+
+
 
