@@ -25,7 +25,7 @@ Runs the app in the development mode.<br>
 
 ## User Stories
 
-##### `Patrons` and `Employees`
+#### `Patrons` and `Employees`
 - A patron can see a list of tapped kegs so they can order.
 - The list a patron can see includes each beer's name, brewer, alcoholic content,price, and pints left in keg.
 - The lower priced items will be green so that patrons can quickly identify special deals.
