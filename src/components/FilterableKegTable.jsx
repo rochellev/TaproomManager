@@ -6,7 +6,6 @@ import KegTable from './KegTable';
 function FilterableKegTable() {
   return (
     <div>
-      
       <br></br>
       <KegTable />
     </div>
