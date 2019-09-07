@@ -42,7 +42,8 @@ Runs the app in the development mode.<br>
 
 ## Technologies Used
 
-| :------- | :--------: | :--------: |
+| | | |
+|-|-|-|
 | React | HTML | Webpack |
 | JavaScript | CSS |  Babel |
 | JSX | Bootstrap | ESLint |
