@@ -23,6 +23,12 @@ $ npm install
 Runs the app in the development mode.<br>
 
 
+## User Stories
+
+- A patron can see a list of tapped kegs so they can order.
+- The list a patron can see includes each beer's name, brewer, alcoholic content, and price.
+
+
 ## Component Design
 
 ![component graph](src/assets/img/TaproomManager.jpg)
