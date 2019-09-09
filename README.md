@@ -54,3 +54,4 @@ Runs the app in the development mode.<br>
 - tracking keg's pints
 - button for pint decrement
 - styling
+- pre made component: https://www.learnhowtoprogram.com/react/managing-state/library-feature-premade-components
