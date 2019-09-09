@@ -58,3 +58,6 @@ Runs the app in the development mode.<br>
 - button for pint decrement
 - styling
 - pre made component: https://www.learnhowtoprogram.com/react/managing-state/library-feature-premade-components
+
+- https://github.com/epicodus-lessons/react-help-queue-example/blob/2_0h_lifting_state/src/components/NewTicketForm.jsx
+
