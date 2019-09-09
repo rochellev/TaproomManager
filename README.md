@@ -42,11 +42,14 @@ Runs the app in the development mode.<br>
 
 ## Technologies Used
 
-| | | |
-|-|-|-|
-| React | HTML | Webpack |
-| JavaScript | CSS |  Babel |
-| JSX | Bootstrap | ESLint |
+* React
+* JavaScript (JSX)
+* HTML
+* CSS
+* Bootstrap
+* Webpack
+* Babel
+* ESLint
 
 
 ## In Progress
@@ -54,5 +57,7 @@ Runs the app in the development mode.<br>
 - tracking keg's pints
 - button for pint decrement
 - styling
+- pre made component: https://www.learnhowtoprogram.com/react/managing-state/library-feature-premade-components
 
-https://github.com/epicodus-lessons/react-help-queue-example/blob/2_0h_lifting_state/src/components/NewTicketForm.jsx
+- https://github.com/epicodus-lessons/react-help-queue-example/blob/2_0h_lifting_state/src/components/NewTicketForm.jsx
+
