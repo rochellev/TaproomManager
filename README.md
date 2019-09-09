@@ -54,3 +54,5 @@ Runs the app in the development mode.<br>
 - tracking keg's pints
 - button for pint decrement
 - styling
+
+https://github.com/epicodus-lessons/react-help-queue-example/blob/2_0h_lifting_state/src/components/NewTicketForm.jsx
