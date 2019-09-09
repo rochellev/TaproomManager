@@ -5,7 +5,7 @@ import FilterableKegTable from './FilterableKegTable';
 
 function App() {
     var appBackground = {
-        backgroundColor: '#4b4e6d',
+        backgroundColor: '#95A3B3',
     };
     return (
         <div style={appBackground}>
