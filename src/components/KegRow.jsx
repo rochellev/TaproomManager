@@ -1,13 +1,9 @@
 import React from 'react';
-import Keg from './Keg';
+import KegList from './KegList';
 
 function KegRow() {
   return (
     <div>
-      <Keg
-        name="Pyramid Hefeweizen"
-        brand="Pyramid"
-        price="$5" />
     </div>
 
   );

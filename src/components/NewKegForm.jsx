@@ -10,13 +10,8 @@ function NewKegForm(props) {
 
   function handleNewKegFormSubmission(event) {
     event.preventDefault();
-    props.onNewKegCreation({
-      name: _name.value,
-      brand: _brand.value,
-      price: _price.value,
-      alcoholContent: _alcoholContent.value,
-      pintsRemaining: _pintsRemaining.value
-    });
+    console.log('The value of name is ' + _name.value);
+    props.onNewKegCreation({name: _name.value, brand: _brand.value, price: _price.value, alcoholContent: _alcoholContent.value, pintsRemaining: _pintsRemaining.value});
     _name.value = '';
     _brand.value = '';
     _price.value = '';
