@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Error404(props){
-  return(
+function Error404(props) {
+  return (
     <div>
       <h2>Sorry, the page {props.location.pathname} does not exist!</h2>
     </div>
-  )
+  );
 }
 
 Error404.propTypes = {

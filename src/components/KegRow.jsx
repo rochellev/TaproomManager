@@ -1,15 +1,15 @@
 import React from 'react';
 import Keg from './Keg';
 
-function KegRow(){
-  return(
+function KegRow() {
+  return (
     <div>
-      <Keg 
-      name="Pyramid Hefeweizen"
-      brand="Pyramid"
-      price="$5" />
+      <Keg
+        name="Pyramid Hefeweizen"
+        brand="Pyramid"
+        price="$5" />
     </div>
-    
+
   );
 }
 
