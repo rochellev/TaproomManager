@@ -7,7 +7,9 @@ function FilterableKegTable() {
   return (
     <div>
       <br></br>
+      <UserInputBox />
       <KegTable />
+      
     </div>
   );
 }

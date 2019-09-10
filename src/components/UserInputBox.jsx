@@ -3,7 +3,11 @@ import React from 'react';
 function UserInputBox() {
   return (
     <div>
-      <p>User input box</p>
+      <form>
+        <input type='text'
+          placeholder='Search Taproom'/>
+        <button type='submit'>Search!</button>
+      </form>
     </div>
   );
 }

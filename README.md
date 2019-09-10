@@ -54,6 +54,10 @@ Runs the app in the development mode.<br>
 * ESLint
 
 
+## Bugs
+* new keg form does not clear out after submit
+
+
 ## In Progress
 - create new keg
 - tracking keg's pints

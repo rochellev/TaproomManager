@@ -10,6 +10,7 @@ function App() {
   var appBackground = {
     backgroundColor: '#95A3B3',
   };
+  
   return (
     <div style={appBackground}>
       <Header />
