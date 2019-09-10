@@ -1,4 +1,5 @@
 import React from 'react';
+import NewKegForm from './NewKegForm';
 
 class NewKegControl extends React.Component {
 
@@ -12,13 +13,16 @@ class NewKegControl extends React.Component {
 
   handleClick() {
     this.setState({ formVisibleOnPage: true });
-    console.log('formVisibleOnPage set to ' + this.state.formVisibleOnPage);
   }
 
   render() {
+    let currentVisibleContent = null;
+    if (this.state.formVisibleOnPage) {
+      currentVisibleContent = <NewKegForm />;
+    }
     return (
-      <div>New Keg Control!
-        <strong onClick={this.handleClick}>Click me to change my state!</strong>
+      <div>
+        {currentVisibleContent}
       </div>
     );
   }

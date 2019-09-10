@@ -3,7 +3,7 @@ import Header from './Header';
 import Error404 from './Error404';
 import { Switch, Route } from 'react-router-dom';
 import FilterableKegTable from './FilterableKegTable';
-import NewKegControl from './NewKegControl';
+import NewKegForm from './NewKegForm';
 
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
       <Header />
       <Switch>
         <Route exact path='/' component={FilterableKegTable} />
-        < Route path='/newkeg' component={NewKegControl} />
+        < Route path='/newkeg' component={NewKegForm} />
         <Route component={Error404} />
       </Switch>
     </div>

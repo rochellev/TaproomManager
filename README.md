@@ -6,15 +6,17 @@
 
 Taproom manager is a react app for tracking inventory.
 
+
 ## Installing Taproom
 
 Clone repo on your machine and install dependencies.
 
 ```sh
 $ git clone https://github.com/rochellev/TaproomManager.git
-$ cd  TaproomManager
+$ cd TaproomManager
 $ npm install
 ```
+
 
 ## Running Taproom
 
