@@ -16,12 +16,6 @@ KegList.propTypes = {
 
 <br/><br/>
 
-#### `8:42  error  Missing "key" prop for element in iterator    react/jsx-key`
-
-* added a unique id for kegs
-* solved
-
-
 
 #### `Warning: Each child in an array or iterator should have a unique "key" prop. Check the render method of `KegList`. See https://fb.me/react-warning-keys for more information.`
 

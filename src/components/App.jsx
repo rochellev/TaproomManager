@@ -5,6 +5,7 @@ import { Switch, Route } from 'react-router-dom';
 // import FilterableKegTable from './FilterableKegTable';
 import NewKegForm from './NewKegForm';
 import KegList from './KegList';
+import Admin from './Admin';
 
 
 class App extends React.Component {
@@ -34,6 +35,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path='/' render={() => <KegList kegList={this.state.masterKegList} />} />
           <Route path='/newkeg' render={() => <NewKegForm onNewKegCreation={this.handleAddingNewKegToList} />} />
+          <Route path='/admin' component={Admin} />
           <Route component={Error404} />
         </Switch>
       </div>
