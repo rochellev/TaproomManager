@@ -53,7 +53,7 @@ function NewKegForm(props) {
   );
 }
 
-NewKegForm.propType = {
+NewKegForm.propTypes = {
   onNewKegCreation: PropTypes.func
 };
 

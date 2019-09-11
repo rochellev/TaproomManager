@@ -1,7 +1,8 @@
 # Taproom Manager
-### Rochelle Roberts
+### Rochelle Roberts<br/>
 ---
 
+<br/>
 
 ## Description
 

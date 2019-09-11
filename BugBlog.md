@@ -8,8 +8,13 @@
 * typo
 * had "prototype" instead of the correct propTypes
 * I think this caused the props not to be saved correctly
+```javascript
+KegList.propTypes = {
+  kegList: PropTypes.array
+};
+```
 
-
+<br/><br/>
 
 #### `8:42  error  Missing "key" prop for element in iterator    react/jsx-key`
 
@@ -29,3 +34,4 @@
 
 * typo, had "printsRemaining"
 * wasnt adding the tag correctly so keg didnt get the pints value
+
