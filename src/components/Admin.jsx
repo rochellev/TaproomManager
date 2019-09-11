@@ -6,12 +6,13 @@ function Admin(props) {
   return (
     <div>
       <h2>Admin</h2>
-      <KegList kegList={props.kegList} />
+      <KegList kegList={props.kegList} currentRouterPath={props.currentRouterPath} />
     </div>
   );
 }
 Admin.propTypes = {
-  kegList: PropTypes.array
+  kegList: PropTypes.array,
+  currentRouterPath: PropTypes.string.isRequired
 };
 
 export default Admin;

@@ -6,7 +6,7 @@
 
 ## Description
 
-Taproom manager is a react app for tracking inventory.
+Taproom Manager is a React app for tracking inventory.
 
 <br/>
 
@@ -65,7 +65,7 @@ Runs the app in the development mode.
 
 
 ## In Progress
-- create new keg
+- login -- employee vs patron
 - tracking keg's pints
 - button for pint decrement
 - styling

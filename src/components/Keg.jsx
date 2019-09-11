@@ -20,6 +20,7 @@ Keg.propTypes = {
   price: PropTypes.string.isRequired,
   alcoholContent: PropTypes.string.isRequired,
   pintsRemaining: PropTypes.string.isRequired,
+  currentRouterPath: PropTypes.string
 };
 
 export default Keg;
