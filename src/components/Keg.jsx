@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Keg(props) {
-  return (
+  const kegInformation =
     <div>
       <li>Name: {props.name}</li>
       <li>Brand: {props.brand}</li>
@@ -10,7 +10,19 @@ function Keg(props) {
       <li>Alcohol Content: {props.alcoholContent}</li>
       <li>Pints Remaining: {props.pintsRemaining}</li>
       <br></br>
-    </div>
+    </div>;
+  if (props.currentRouterPath === '/admin') {
+    return (
+      <div onClick={() => {alert('hey, you just clicked the keg with beer name: ' + props.name);}}>
+        
+        {kegInformation}
+      </div>
+    );
+  }
+  return (
+   <div>
+     {kegInformation}
+   </div>
   );
 }
 
