@@ -10,8 +10,8 @@ function KegList(props){
   );
 }
 
-KegList.prototype = {
+KegList.propTypes = {
   kegList: PropTypes.array
-}
+};
 
 export default KegList;
