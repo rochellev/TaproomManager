@@ -56,7 +56,7 @@ Runs the app in the development mode.<br>
 
 
 ## Bugs
-* new keg form does not clear out after submit
+* Bugs and solutions found in `BugBlog` file
 
 
 ## In Progress
