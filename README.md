@@ -1,5 +1,5 @@
 # Taproom Manager
-### Rochelle Roberts<br/>
+### Rochelle Roberts
 ---
 
 <br/>
@@ -8,6 +8,7 @@
 
 Taproom manager is a react app for tracking inventory.
 
+<br/>
 
 ## Installing Taproom
 
@@ -18,14 +19,14 @@ $ git clone https://github.com/rochellev/TaproomManager.git
 $ cd TaproomManager
 $ npm install
 ```
-
+<br/>
 
 ## Running Taproom
 
-### `npm start`
+#### `npm start`
 
-Runs the app in the development mode.<br>
-
+Runs the app in the development mode.
+<br/>
 
 ## User Stories
 
@@ -38,11 +39,13 @@ Runs the app in the development mode.<br>
 - An employee can add a new keg to the tapped kegs so that they can keep the list current.
 - An employee can edit or delete existing kegs on the tapped kegs list so they can fully manage their taproom.
 
+<br/>
 
 ## Component Design
 
 ![component graph](src/assets/img/TaproomManager.jpg)
 
+<br/>
 
 ## Technologies Used
 
@@ -55,6 +58,7 @@ Runs the app in the development mode.<br>
 * Babel
 * ESLint
 
+<br/>
 
 ## Bugs
 * Bugs and solutions found in `BugBlog` file
