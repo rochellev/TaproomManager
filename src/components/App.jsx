@@ -4,12 +4,12 @@ import Error404 from './Error404';
 import { Switch, Route } from 'react-router-dom';
 // import FilterableKegTable from './FilterableKegTable';
 import NewKegForm from './NewKegForm';
-import KegList from './KegList'
+import KegList from './KegList';
 
 
 class App extends React.Component {
 
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
       masterKegList: []
@@ -17,10 +17,10 @@ class App extends React.Component {
     this.handleAddingNewKegToList = this.handleAddingNewKegToList.bind(this);
   }
 
-  handleAddingNewKegToList(newKeg){
+  handleAddingNewKegToList(newKeg) {
     var newMasterKegList = this.state.masterKegList.slice();
     newMasterKegList.push(newKeg);
-    this.setState({masterKegList: newMasterKegList});
+    this.setState({ masterKegList: newMasterKegList });
   }
 
   render() {
@@ -32,8 +32,8 @@ class App extends React.Component {
       <div style={appBackground}>
         <Header />
         <Switch>
-          <Route exact path='/' render={()=><KegList kegList={this.state.masterKegList}  />} />
-          < Route path='/newkeg' render={()=><NewKegForm onNewKegCreation={this.handleAddingNewKegToList} />} />
+          <Route exact path='/' render={() => <KegList kegList={this.state.masterKegList} />} />
+          <Route path='/newkeg' render={() => <NewKegForm onNewKegCreation={this.handleAddingNewKegToList} />} />
           <Route component={Error404} />
         </Switch>
       </div>

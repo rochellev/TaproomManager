@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { v4 } from 'uuid';
 
 function NewKegForm(props) {
   let _name = null;
@@ -10,13 +11,12 @@ function NewKegForm(props) {
 
   function handleNewKegFormSubmission(event) {
     event.preventDefault();
-    console.log('The value of name is ' + _name.value);
-    props.onNewKegCreation({name: _name.value, brand: _brand.value, price: _price.value, alcoholContent: _alcoholContent.value, pintsRemaining: _pintsRemaining.value});
+    props.onNewKegCreation({name: _name.value, brand: _brand.value, price: _price.value, alcoholContent: _alcoholContent.value, pintsRemaining: _pintsRemaining.value, id: v4()});
     _name.value = '';
     _brand.value = '';
     _price.value = '';
-    _alcoholContent = '';
-    _pintsRemaining = '';
+    _alcoholContent.value = '';
+    _pintsRemaining.value = '';
   }
 
   return (
@@ -33,7 +33,7 @@ function NewKegForm(props) {
           placeholder='Beer Brewer'
           ref={(input) => { _brand = input; }} />
         <input
-          type='number'
+          type='text'
           id='price'
           placeholder='Beer Price'
           ref={(input) => { _price = input; }} />
@@ -43,7 +43,7 @@ function NewKegForm(props) {
           placeholder='Alcohol Content'
           ref={(input) => { _alcoholContent = input; }} />
         <input
-          type='number'
+          type='text'
           id='pintsRemaining'
           placeholder='Pints in this Keg'
           ref={(input) => { _pintsRemaining = input; }} />
