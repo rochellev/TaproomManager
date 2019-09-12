@@ -39,7 +39,7 @@ Runs the app in the development mode.
 - An employee is alerted when the number of pints left runs low so that they can better manage their taproom.
 - An employee can add a new keg to the tapped kegs so that they can keep the list current. Patrons cannot add new kegs.
 - An employee can click on a keg card in the keg list to edit or delete that keg so they can fully manage their taproom.
-- A patron cannot add, edit or delete a keg to make sure the taproom's keg list is accurate.
+- Only an employee cannot add, edit, and delete a keg to make sure the taproom's keg list is accurate.
 
 
 <br/>

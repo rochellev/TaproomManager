@@ -11,7 +11,7 @@ function Keg(props) {
       <li>Pints Remaining: {props.pintsRemaining}</li>
       <br></br>
     </div>;
-  if (props.currentRouterPath === '/admin') {
+  if (props.currentRouterPath === '/employee') {
     return (
       <div onClick={() => { alert('hey, you just clicked the keg with beer name: ' + props.name); }}>
 
