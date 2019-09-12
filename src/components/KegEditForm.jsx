@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function KegEditForm(){
   return (
@@ -7,5 +8,9 @@ function KegEditForm(){
     </div>
   );
 }
+
+KegEditForm.propTypes={
+  selectedKeg: PropTypes.object
+};
 
 export default KegEditForm;
