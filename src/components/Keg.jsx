@@ -13,16 +13,16 @@ function Keg(props) {
     </div>;
   if (props.currentRouterPath === '/admin') {
     return (
-      <div onClick={() => {alert('hey, you just clicked the keg with beer name: ' + props.name);}}>
-        
+      <div onClick={() => { alert('hey, you just clicked the keg with beer name: ' + props.name); }}>
+
         {kegInformation}
       </div>
     );
   }
   return (
-   <div>
-     {kegInformation}
-   </div>
+    <div>
+      {kegInformation}
+    </div>
   );
 }
 

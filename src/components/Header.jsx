@@ -8,7 +8,7 @@ function Header(){
   return (
     <div style={headerStyle}>
       <h1>Taproom Manager</h1>
-      <Link to="/">Home</Link> | <Link to="/newkeg">Create a New Keg</Link> | <Link to="/admin">Admin</Link>
+      <Link to="/">Home</Link> | <Link to="/newkeg">Create a New Keg</Link> | <Link to="/employee">Employee</Link>
     </div>
   );
 }

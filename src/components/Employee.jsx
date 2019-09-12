@@ -2,17 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import KegList from './KegList';
 
-function Admin(props) {
+function Employee(props) {
   return (
     <div>
-      <h2>Admin</h2>
+      <h2>Employee</h2>
       <KegList kegList={props.kegList} currentRouterPath={props.currentRouterPath} />
     </div>
   );
 }
-Admin.propTypes = {
+Employee.propTypes = {
   kegList: PropTypes.array,
   currentRouterPath: PropTypes.string.isRequired
 };
 
-export default Admin;
+export default Employee;
