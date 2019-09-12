@@ -65,7 +65,7 @@ Runs the app in the development mode.
 
 
 ## In Progress
-- login -- employee vs patron
+- login -- employee vs patron, currently have separate routes but no login
 - tracking keg's pints
 - button for pint decrement
 - styling

@@ -33,17 +33,17 @@ function NewKegForm(props) {
           placeholder='Beer Brewer'
           ref={(input) => { _brand = input; }} />
         <input
-          type='text'
+          type='number' step='0.01'
           id='price'
           placeholder='Beer Price'
           ref={(input) => { _price = input; }} />
         <input
-          type='text'
+          type='number' step='0.01' max='50'
           id='alcoholContent'
           placeholder='Alcohol Content'
           ref={(input) => { _alcoholContent = input; }} />
         <input
-          type='text'
+          type='number'
           id='pintsRemaining'
           placeholder='Pints in this Keg'
           ref={(input) => { _pintsRemaining = input; }} />

@@ -6,8 +6,8 @@ function Keg(props) {
     <div>
       <li>Name: {props.name}</li>
       <li>Brand: {props.brand}</li>
-      <li>Price: {props.price}</li>
-      <li>Alcohol Content: {props.alcoholContent}</li>
+      <li>Price: ${props.price}</li>
+      <li>Alcohol Content: {props.alcoholContent}%</li>
       <li>Pints Remaining: {props.pintsRemaining}</li>
       <br></br>
     </div>;
