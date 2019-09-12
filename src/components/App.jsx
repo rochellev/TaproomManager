@@ -28,7 +28,6 @@ class App extends React.Component {
 
   handleChangingSelectedKeg(keg){
     this.setState({selectedKeg: keg});
-    alert('The selected keg is now: ' + this.state.selectedKeg.name);
   }
 
   render() {

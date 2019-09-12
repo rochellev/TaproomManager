@@ -6,7 +6,7 @@ import KegEditForm from './KegEditForm';
 function Employee(props) {
   let optionalSelectedKegContent = null;
   if(props.selectedKeg != null){
-    optionalSelectedKegContent = <KegEditForm />;
+    optionalSelectedKegContent = <KegEditForm selectedKeg={props.selectedKeg} />;
   }
 
   return (
