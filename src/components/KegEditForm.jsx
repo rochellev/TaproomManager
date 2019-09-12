@@ -2,7 +2,9 @@ import React from 'react';
 
 function KegEditForm(){
   return (
-    <p>Keg edit form</p>
+    <div>
+      <p>Keg edit form</p>
+    </div>
   );
 }
 
