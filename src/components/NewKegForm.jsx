@@ -22,6 +22,10 @@ function NewKegForm(props) {
 
   return (
     <div class='d-flex flex-column align-items-center'>
+      <div class='well'>
+        <h1>New Keg Form</h1>
+      </div>
+      <br/>
       <form onSubmit={handleNewKegFormSubmission}>
         <div class='form-group'>
           <input class='form-control form-control-lg'
@@ -31,7 +35,7 @@ function NewKegForm(props) {
             ref={(input) => { _name = input; }} />
         </div>
         <div class='form-group'>
-          <input class='form-control form-control-lg'
+          <input class='shadow rounded form-control form-control-lg'
             type='text'
             id='brand'
             placeholder='Beer Brewer'
@@ -59,7 +63,7 @@ function NewKegForm(props) {
             ref={(input) => { _pintsRemaining = input; }} />
         </div>
         <div class='d-flex form-group justify-content-end'>
-        <button class='btn btn-primary' type='submit'>Submit!</button>
+          <button class='btn btn-primary' type='submit'>Submit!</button>
         </div>
       </form>
       <br></br>
