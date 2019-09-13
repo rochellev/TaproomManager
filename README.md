@@ -6,9 +6,7 @@
 ## Description
 
 Taproom Manager is a React app for tracking inventory.
-
 <br/>
-
 ## Installing Taproom
 
 Clone this repository on your machine and install dependencies.
