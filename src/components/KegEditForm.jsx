@@ -4,9 +4,11 @@ import PropTypes from 'prop-types';
 function KegEditForm(props){
   return (
     <div>
-      <p>{props.selectedKeg.name}</p>
-      {/* add call back function */}
-      <form onSubmit={}>
+      <h2>{props.selectedKeg.name}</h2>
+      <form onSubmit={call}>
+        <div class='form-group'>
+          
+        </div>
 
       </form>
       

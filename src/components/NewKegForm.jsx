@@ -20,33 +20,43 @@ function NewKegForm(props) {
   }
 
   return (
-    <div>
+    <div class='container'>
       <form onSubmit={handleNewKegFormSubmission}>
-        <input
-          type='text'
-          id='name'
-          placeholder='Beer Name'
-          ref={(input) => { _name = input; }} />
-        <input
-          type='text'
-          id='brand'
-          placeholder='Beer Brewer'
-          ref={(input) => { _brand = input; }} />
-        <input
-          type='number' step='0.01'
-          id='price'
-          placeholder='Beer Price'
-          ref={(input) => { _price = input; }} />
-        <input
-          type='number' step='0.01' max='50'
-          id='alcoholContent'
-          placeholder='Alcohol Content'
-          ref={(input) => { _alcoholContent = input; }} />
-        <input
-          type='number'
-          id='pintsRemaining'
-          placeholder='Pints in this Keg'
-          ref={(input) => { _pintsRemaining = input; }} />
+        <div>
+          <input
+            type='text'
+            id='name'
+            placeholder='Beer Name'
+            ref={(input) => { _name = input; }} />
+        </div>
+        <div>
+          <input
+            type='text'
+            id='brand'
+            placeholder='Beer Brewer'
+            ref={(input) => { _brand = input; }} />
+        </div>
+        <div>
+          <input
+            type='number' step='0.01'
+            id='price'
+            placeholder='Beer Price'
+            ref={(input) => { _price = input; }} />
+        </div>
+        <div>
+          <input
+            type='number' step='0.01' max='50'
+            id='alcoholContent'
+            placeholder='Alcohol Content'
+            ref={(input) => { _alcoholContent = input; }} />
+        </div>
+        <div>
+          <input
+            type='number'
+            id='pintsRemaining'
+            placeholder='Pints in this Keg'
+            ref={(input) => { _pintsRemaining = input; }} />
+        </div>
         <button type='submit'>Submit!</button>
       </form>
     </div>
