@@ -21,11 +21,13 @@
   "homepage": "https://github.com/epicodus-lessons/react-help-queue-example#readme",
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "prop-types": "^15.5.10",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0",
+    "prop-types": "^15.7.2",
     "react": "^16.9",
     "react-dom": "^16.9",
     "react-router-dom": "^5.0.1",
-    "reactstrap": "^8.0.1",
+    "react-search-field": "^1.0.0",
     "styled-jsx": "^3.2.2",
     "uuid": "^3.2.1"
   },
@@ -40,9 +42,10 @@
     "eslint-plugin-react": "^7.14.3",
     "file-loader": "^1.1.6",
     "html-webpack-plugin": "^2.29.0",
-    "react-hot-loader": "next",
+    "react-hot-loader": "^3.1.3",
+    "style-loader": "^1.0.0",
     "url-loader": "^0.6.2",
-    "webpack": "^3.4.0",
-    "webpack-dev-server": "^2.5.0"
+    "webpack": "^3.12.0",
+    "webpack-dev-server": "^2.11.5"
   }
 }
