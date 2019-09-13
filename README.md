@@ -5,7 +5,7 @@
 
 ## Description
 
-Taproom Manager is a React app for tracking inventory.
+Taproom Manager is a React app for tracking inventory. I experiment with components, state and styling.
 <br/>
 ## Installing Taproom
 
