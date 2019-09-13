@@ -5,15 +5,20 @@ import KegEditForm from './KegEditForm';
 
 function Employee(props) {
   let optionalSelectedKegContent = null;
-  if(props.selectedKeg != null){
+  if (props.selectedKeg != null) {
     optionalSelectedKegContent = <KegEditForm selectedKeg={props.selectedKeg} />;
   }
 
   return (
     <div>
       <h1>Employee Page</h1>
-      {optionalSelectedKegContent}
-      <KegList kegList={props.kegList} currentRouterPath={props.currentRouterPath} onKegSelection={props.onKegSelection} />
+      <div class='d-flex flex-column-reverse'>
+        <KegList kegList={props.kegList} currentRouterPath={props.currentRouterPath} onKegSelection={props.onKegSelection} />
+      </div>
+      <div>
+        {optionalSelectedKegContent}
+      </div>
+
     </div>
   );
 }
