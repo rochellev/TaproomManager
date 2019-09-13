@@ -3,6 +3,8 @@
 ---
 <br/>
 
+#### `can add empty kegs`
+
 #### `7:24  error  'name' is missing in props validation            react/prop-types`
 
 * had "prototype" instead of the correct propTypes
