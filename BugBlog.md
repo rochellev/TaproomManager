@@ -5,6 +5,8 @@
 
 #### `can add empty kegs`
 
+#### `click on employee and weird things happen`
+
 #### `7:24  error  'name' is missing in props validation            react/prop-types`
 
 * had "prototype" instead of the correct propTypes
