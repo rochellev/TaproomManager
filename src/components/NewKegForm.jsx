@@ -2,12 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { v4 } from 'uuid';
 
+
 function NewKegForm(props) {
   let _name = null;
   let _brand = null;
   let _price = null;
   let _alcoholContent = null;
-  let _pintsRemaining = null;
+  let _pintsRemaining = null
 
   function handleNewKegFormSubmission(event) {
     event.preventDefault();
@@ -20,45 +21,48 @@ function NewKegForm(props) {
   }
 
   return (
-    <div class='container'>
+    <div class='d-flex flex-column align-items-center'>
       <form onSubmit={handleNewKegFormSubmission}>
-        <div>
-          <input
+        <div class='form-group'>
+          <input class='form-control form-control-lg'
             type='text'
             id='name'
             placeholder='Beer Name'
             ref={(input) => { _name = input; }} />
         </div>
-        <div>
-          <input
+        <div class='form-group'>
+          <input class='form-control form-control-lg'
             type='text'
             id='brand'
             placeholder='Beer Brewer'
             ref={(input) => { _brand = input; }} />
         </div>
-        <div>
-          <input
+        <div class='form-group'>
+          <input class='form-control form-control-lg'
             type='number' step='0.01'
             id='price'
             placeholder='Beer Price'
             ref={(input) => { _price = input; }} />
         </div>
-        <div>
-          <input
+        <div class='form-group'>
+          <input class='form-control form-control-lg'
             type='number' step='0.01' max='50'
             id='alcoholContent'
             placeholder='Alcohol Content'
             ref={(input) => { _alcoholContent = input; }} />
         </div>
-        <div>
-          <input
+        <div class='form-group'>
+          <input class='form-control form-control-lg'
             type='number'
             id='pintsRemaining'
             placeholder='Pints in this Keg'
             ref={(input) => { _pintsRemaining = input; }} />
         </div>
-        <button type='submit'>Submit!</button>
+        <div class='d-flex form-group justify-content-end'>
+        <button class='btn btn-primary' type='submit'>Submit!</button>
+        </div>
       </form>
+      <br></br>
     </div>
   );
 }
