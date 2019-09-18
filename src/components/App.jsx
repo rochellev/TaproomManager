@@ -13,7 +13,6 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      masterKegList: {},
       selectedKeg: null
     };
     this.handleChangingSelectedKeg = this.handleChangingSelectedKeg.bind(this);
