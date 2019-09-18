@@ -58,7 +58,8 @@ Runs the app in the development mode.
 * Webpack
 * Babel
 * ESLint
-
+* Redux
+* 
 <br/>
 
 
