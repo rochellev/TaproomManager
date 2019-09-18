@@ -13,7 +13,20 @@ function NewKegForm(props) {
   let _pintsRemaining = null
 
   function handleNewKegFormSubmission(event) {
+    const { dispatch } = props;
     event.preventDefault();
+    // creating action object with keg info as payload
+    const action = {
+      type: 'ADD_KEG',
+      id: null,
+      name: _name.value,
+      brand: _brand.value,
+      price: _price.value,
+      alcoholContent: _alcoholContent.value,
+      pintsRemaining: _pintsRemaining.value
+    };
+    // invoke code in reducer
+    dispatch(action);
     props.onNewKegCreation({ name: _name.value, brand: _brand.value, price: _price.value, alcoholContent: _alcoholContent.value, pintsRemaining: _pintsRemaining.value, id: v4() });
     _name.value = '';
     _brand.value = '';
@@ -27,7 +40,7 @@ function NewKegForm(props) {
       <div class='well'>
         <h1>New Keg Form</h1>
       </div>
-      <br/>
+      <br />
       <form onSubmit={handleNewKegFormSubmission}>
         <div class='form-group'>
           <input class='form-control form-control-lg'
