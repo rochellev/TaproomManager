@@ -6,7 +6,7 @@ import KegEditForm from './KegEditForm';
 function Employee(props) {
   let optionalSelectedKegContent = null;
   if (props.selectedKeg != null) {
-    optionalSelectedKegContent = <KegEditForm selectedKeg={props.selectedKeg} />;
+    optionalSelectedKegContent = <KegEditForm selectedKeg={props.kegList[props.selectedKeg]} />;
   }
 
   return (
@@ -23,7 +23,7 @@ function Employee(props) {
   );
 }
 Employee.propTypes = {
-  kegList: PropTypes.array,
+  kegList: PropTypes.object,
   currentRouterPath: PropTypes.string.isRequired,
   onKegSelection: PropTypes.func.isRequired,
   selectedKeg: PropTypes.object

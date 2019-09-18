@@ -5,8 +5,7 @@ import { Switch, Route } from 'react-router-dom';
 import NewKegForm from './NewKegForm';
 import KegList from './KegList';
 import Employee from './Employee';
-import { v4 } from 'uuid';
-
+import { connect } from 'react-redux';
 
 class App extends React.Component {
 
@@ -19,8 +18,8 @@ class App extends React.Component {
     this.handleChangingSelectedKeg = this.handleChangingSelectedKeg.bind(this);
   }
 
-  handleChangingSelectedKeg(kegID){
-    this.setState({selectedKeg: kegID});
+  handleChangingSelectedKeg(kegID) {
+    this.setState({ selectedKeg: kegID });
   }
 
   render() {
@@ -33,7 +32,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path='/' render={() => <KegList kegList={this.state.masterKegList} />} />
           <Route path='/newkeg' render={() => <NewKegForm />} />
-          <Route path='/employee' render={(props)=> <Employee kegList={this.state.masterKegList} currentRouterPath={props.location.pathname} onKegSelection={this.handleChangingSelectedKeg} selectedKeg={this.state.selectedKeg} />} />
+          <Route path='/employee' render={(props) => <Employee kegList={this.state.masterKegList} currentRouterPath={props.location.pathname} onKegSelection={this.handleChangingSelectedKeg} selectedKeg={this.state.selectedKeg} />} />
           <Route component={Error404} />
         </Switch>
       </div>
@@ -41,4 +40,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default connect()(App);

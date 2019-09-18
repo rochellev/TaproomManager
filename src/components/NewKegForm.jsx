@@ -17,7 +17,7 @@ function NewKegForm(props) {
     // creating action object with keg info as payload
     const action = {
       type: 'ADD_KEG',
-      id: null,
+      id: v4(),
       name: _name.value,
       brand: _brand.value,
       price: _price.value,
