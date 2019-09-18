@@ -5,7 +5,10 @@ import { HashRouter } from 'react-router-dom';
 import { AppContainer } from 'react-hot-loader';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
+import { createStore } from 'redux';
+import kegListReducer from './reducers/keg-list-reducer';
 
+const store = createStore(kegListReducer);
 
 const render = (Component) => {
   ReactDOM.render(
