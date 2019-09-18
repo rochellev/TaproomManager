@@ -1,11 +1,12 @@
 import React from 'react';
 import Header from './Header';
 import Error404 from './Error404';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, withRouter } from 'react-router-dom';
 import NewKegForm from './NewKegForm';
 import KegList from './KegList';
 import Employee from './Employee';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
 class App extends React.Component {
 
@@ -30,9 +31,9 @@ class App extends React.Component {
       <div style={appBackground}>
         <Header />
         <Switch>
-          <Route exact path='/' render={() => <KegList kegList={this.state.masterKegList} />} />
+          <Route exact path='/' render={() => <KegList kegList={this.props.masterKegList} />} />
           <Route path='/newkeg' render={() => <NewKegForm />} />
-          <Route path='/employee' render={(props) => <Employee kegList={this.state.masterKegList} currentRouterPath={props.location.pathname} onKegSelection={this.handleChangingSelectedKeg} selectedKeg={this.state.selectedKeg} />} />
+          <Route path='/employee' render={(props) => <Employee kegList={this.props.masterKegList} currentRouterPath={props.location.pathname} onKegSelection={this.handleChangingSelectedKeg} selectedKeg={this.state.selectedKeg} />} />
           <Route component={Error404} />
         </Switch>
       </div>
@@ -40,10 +41,14 @@ class App extends React.Component {
   }
 }
 
+App.propTypes = {
+  masterKegList: PropTypes.object
+};
+
 const mapStateToProps = state => {
   return {
     masterKegList: state       
   }
 }
 
-export default connect(mapStateToProps)(App);
+export default withRouter(connect(mapStateToProps)(App));
