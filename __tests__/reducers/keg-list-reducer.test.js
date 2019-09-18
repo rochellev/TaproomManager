@@ -8,9 +8,12 @@ describe('kegListReducer', ()=>{
     brand: 'Company Brewer',
     price: '3.00',
     alcoholContent: '3.6',
-    pintsRemaining: '300'
+    pintsRemaining: '300',
+    id: 0
   }
   test('Should return default state if no action type is recognized', () => {
     expect(kegListReducer({}, {type: null})).toEqual({});
   });
+
+
 });
