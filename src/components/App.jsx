@@ -40,4 +40,10 @@ class App extends React.Component {
   }
 }
 
-export default connect()(App);
+const mapStateToProps = state => {
+  return {
+    masterKegList: state       
+  }
+}
+
+export default connect(mapStateToProps)(App);
