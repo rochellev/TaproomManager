@@ -7,16 +7,17 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
 import { createStore } from 'redux';
 import kegListReducer from './reducers/keg-list-reducer';
+import { Provider } from 'react-redux';
 
 const store = createStore(kegListReducer);
 
 const render = (Component) => {
   ReactDOM.render(
-    <AppContainer>
       <HashRouter>
+        <Provider store={store}>
         <Component />
-      </HashRouter>
-    </AppContainer>,
+        </Provider>
+      </HashRouter>,
     document.getElementById('react-app-root')
   );
 };

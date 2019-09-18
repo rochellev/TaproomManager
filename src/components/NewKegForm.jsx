@@ -4,6 +4,7 @@ import { v4 } from 'uuid';
 
 
 function NewKegForm(props) {
+  console.log(props);
   let _name = null;
   let _brand = null;
   let _price = null;
