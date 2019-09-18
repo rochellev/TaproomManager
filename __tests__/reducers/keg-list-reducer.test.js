@@ -1,4 +1,4 @@
-import kegListReducer from './../src/reducers/keg-list-reducer';
+import kegListReducer from '../../src/reducers/keg-list-reducer';
 
 describe('kegListReducer', ()=>{
 
@@ -38,5 +38,5 @@ describe('kegListReducer', ()=>{
       }
     });
   });
-  
+
 });
