@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { v4 } from 'uuid';
 import { connect } from 'react-redux';
 
@@ -10,7 +9,7 @@ function NewKegForm(props) {
   let _brand = null;
   let _price = null;
   let _alcoholContent = null;
-  let _pintsRemaining = null
+  let _pintsRemaining = null;
 
   function handleNewKegFormSubmission(event) {
     const { dispatch } = props;
@@ -25,9 +24,9 @@ function NewKegForm(props) {
       alcoholContent: _alcoholContent.value,
       pintsRemaining: _pintsRemaining.value
     };
+
     // invoke code in reducer
     dispatch(action);
-    props.onNewKegCreation({ name: _name.value, brand: _brand.value, price: _price.value, alcoholContent: _alcoholContent.value, pintsRemaining: _pintsRemaining.value, id: v4() });
     _name.value = '';
     _brand.value = '';
     _price.value = '';
@@ -86,11 +85,6 @@ function NewKegForm(props) {
   );
 }
 
-NewKegForm.propTypes = {
-  onNewKegCreation: PropTypes.func
-};
-
 // redefine the entire NewKegForm component as the return value of connect()
-NewKegForm = connect()(NewKegForm);
 
-export default NewKegForm;
+export default connect()(NewKegForm);
