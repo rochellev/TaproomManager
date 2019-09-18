@@ -77,4 +77,7 @@ NewKegForm.propTypes = {
   onNewKegCreation: PropTypes.func
 };
 
+// redefine the entire NewKegForm component as the return value of connect()
+NewKegForm = connect()(NewKegForm);
+
 export default NewKegForm;
