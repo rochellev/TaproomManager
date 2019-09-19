@@ -52,7 +52,6 @@ Keg.propTypes = {
   alcoholContent: PropTypes.string.isRequired,
   pintsRemaining: PropTypes.string.isRequired,
   currentRouterPath: PropTypes.string,
-  onKegSelection: PropTypes.func,
   kegId: PropTypes.string.isRequired
 };
 
