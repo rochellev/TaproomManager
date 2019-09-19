@@ -20,6 +20,7 @@ function Keg(props) {
     </div>
     <br></br>
     </div>;
+    
   if (props.currentRouterPath === '/employee') {
     return (
       <div onClick={() => { props.onKegSelection({ name: props.name, brand: props.brand, price: props.price, alcoholContent: props.alcoholContent, pintsRemaining: props.pintsRemaining }); }}>
