@@ -2,14 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
 import { HashRouter } from 'react-router-dom';
-import { AppContainer } from 'react-hot-loader';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
 import { createStore } from 'redux';
-import kegListReducer from './reducers/keg-list-reducer';
 import { Provider } from 'react-redux';
+import rootReducer from './reducers/index';
 
-const store = createStore(kegListReducer);
+const store = createStore(rootReducer);
 let unsubscribe = store.subscribe(() =>
   console.log(store.getState())
 );

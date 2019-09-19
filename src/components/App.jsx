@@ -46,8 +46,8 @@ App.propTypes = {
 
 const mapStateToProps = state => {
   return {
-    masterKegList: state       
-  }
-}
+    masterKegList: state.masterKegList      
+  };
+};
 
 export default withRouter(connect(mapStateToProps)(App));

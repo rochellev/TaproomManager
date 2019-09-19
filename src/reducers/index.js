@@ -4,8 +4,8 @@ import { combineReducers } from 'redux';
 
 // structure state in two slices
 const rootReducer = combineReducers({
-    selectedKeg: selectedKegReducer,
-    masterKegList: kegListReducer
+  selectedKeg: selectedKegReducer,
+  masterKegList: kegListReducer
 });
 
 export default rootReducer;
