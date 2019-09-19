@@ -10,18 +10,6 @@ import PropTypes from 'prop-types';
 
 class App extends React.Component {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      selectedKeg: null
-    };
-    this.handleChangingSelectedKeg = this.handleChangingSelectedKeg.bind(this);
-  }
-
-  handleChangingSelectedKeg(kegID) {
-    this.setState({ selectedKeg: kegID });
-  }
-
   render() {
     var appBackground = {
       backgroundColor: '#95A3B3',
@@ -32,7 +20,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path='/' render={() => <KegList kegList={this.props.masterKegList} />} />
           <Route path='/newkeg' render={() => <NewKegForm />} />
-          <Route path='/employee' render={(props) => <Employee kegList={this.props.masterKegList} currentRouterPath={props.location.pathname} onKegSelection={this.handleChangingSelectedKeg} selectedKeg={this.state.selectedKeg} />} />
+          <Route path='/employee' render={(props) => <Employee currentRouterPath={props.location.pathname} />} />
           <Route component={Error404} />
         </Switch>
       </div>
