@@ -1,8 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {connect} from 'react-redux';
 
 function Keg(props) {
   
+  // save data directly to redux store instead of callback
+  function handleSavingSelectedKeg(kegId){
+    const {dispatch } = props;
+    const action = {
+      type: 'SELECTED_KEG',
+      kegId: kegId
+    };
+    dispatch(action);
+  }
   const kegInformation =
     <div class='container'>
     <div class='card border'>
@@ -23,7 +33,7 @@ function Keg(props) {
     
   if (props.currentRouterPath === '/employee') {
     return (
-      <div onClick={() => { props.onKegSelection({ name: props.name, brand: props.brand, price: props.price, alcoholContent: props.alcoholContent, pintsRemaining: props.pintsRemaining }); }}>
+      <div onClick={() => {handleSavingSelectedKeg(props.kegId); }}>
         {kegInformation}
       </div>
     );
@@ -46,4 +56,4 @@ Keg.propTypes = {
   kegId: PropTypes.string.isRequired
 };
 
-export default Keg;
+export default connect()(Keg);
